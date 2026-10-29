@@ -11,6 +11,7 @@ jobs:
             - name: welcome
               run : echo "Welcome to simple CI/CD demo"
     job2:
+        needs: job1
         runs-on: ubuntu-latest
         steps:
             - name: hello
